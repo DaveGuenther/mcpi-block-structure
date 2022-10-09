@@ -6,26 +6,26 @@ To include this package in your codebase, clone it to the folder (or as a submod
 
 <b>Example</b><br>
 ```python
-  from mcpi.minecraft import Minecraft
-  from mcpi import vec3
-  from mcpi_block_structure.blockstructure import BlockStructure
-  
-  mc = Minecraft.create('xxx.xxx.xxx.xxx',yyyy)  
-  # where x is the ip for your MineCraft server running Raspberry Juice plugin and mcpi.  yyyy is the server port
-  
-  my_cuboid = BlockStructure(mc)
-  NW_bottom_corner = my_cuboid.get_mcpi_vec_from_world_coords(39522, 78, 39968)
-  SE_top_corner = my_cuboid.get_mcpi_vec_from_world_coords(39538, 88, 39977)
-  my_cuboid.get_structure(start_pos_vec3=NW_bottom_corner, end_pos_vec3=SE_top_corner)  # stores the cuboid in memory accessible as my_cuboid.structure
-  
-  
-  my_cuboid.write_to_file("my_cuboid.pkl") # stores as pickle file
-  
-  
-  my_other_cuboid = BlockStructure(mc)
-  other_NW_bottom_corner = my_other_cuboid.get_mcpi_vec_from_world_coords(39554, 12, 39826)
-  my_other_cuboid.read_from_file("my_cuboid.pkl")
-  my_other_cuboid.set_structure(other_NW_bottom_corner)
+from mcpi.minecraft import Minecraft
+from mcpi import vec3
+from mcpi_block_structure.blockstructure import BlockStructure
+
+mc = Minecraft.create('xxx.xxx.xxx.xxx',yyyy)  
+# where x is the ip for your MineCraft server running Raspberry Juice plugin and mcpi.  yyyy is the server port
+
+my_cuboid = BlockStructure(mc)
+NW_bottom_corner = my_cuboid.get_mcpi_vec_from_world_coords(39522, 78, 39968)
+SE_top_corner = my_cuboid.get_mcpi_vec_from_world_coords(39538, 88, 39977)
+my_cuboid.get_structure(start_pos_vec3=NW_bottom_corner, end_pos_vec3=SE_top_corner)  # stores the cuboid in memory accessible as my_cuboid.structure
+
+
+my_cuboid.write_to_file("my_cuboid.pkl") # stores as pickle file
+
+
+my_other_cuboid = BlockStructure(mc)
+other_NW_bottom_corner = my_other_cuboid.get_mcpi_vec_from_world_coords(39554, 12, 39826)
+my_other_cuboid.read_from_file("my_cuboid.pkl")
+my_other_cuboid.set_structure(other_NW_bottom_corner)
   
 '''
 
