@@ -23,7 +23,7 @@ To include this package in your codebase, clone it to the folder (or as a submod
   
   
   my_other_cuboid = BlockStructure(mc)
-  other_NW_bottom_corner = my_other_cuboid.get_mcpi_vec_from_world_coords(39554,12,39826)
+  other_NW_bottom_corner = my_other_cuboid.get_mcpi_vec_from_world_coords(39554, 12, 39826)
   my_other_cuboid.read_from_file("my_cuboid.pkl")
   my_other_cuboid.set_structure(other_NW_bottom_corner)
   
