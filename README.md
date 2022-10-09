@@ -6,9 +6,9 @@ To include this package in your codebase, clone it to the folder (or as a submod
 
 <b>Example</b><br>
 <code>
-  from mcpi.minecraft import Minecraft
-  from mcpi import vec3
-  from mcpi_block_structure.BlockStructure import BlockStructure
+  from mcpi.minecraft import Minecraft<br>
+  from mcpi import vec3<br>
+  from mcpi_block_structure.BlockStructure import BlockStructure<br>
   
   
 
