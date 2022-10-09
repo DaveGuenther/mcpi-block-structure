@@ -10,7 +10,7 @@ To include this package in your codebase, clone it to the folder (or as a submod
   from mcpi import vec3
   from mcpi_block_structure.blockstructure import BlockStructure
   
-  mc = Minecraft.create('xxx.xxx.xxx.xxx',yyyy)  # where x is the ip for your MineCraft server running Raspberry Juice plugin and mcpi
+  mc = Minecraft.create('xxx.xxx.xxx.xxx',yyyy)  # where x is the ip for your MineCraft server running Raspberry Juice plugin and mcpi.  yyyy is the server port
   
   my_cuboid = BlockStructure(mc)
   NW_bottom_corner = my_cuboid.get_mcpi_vec_from_world_coords(39522, 78, 39968)
