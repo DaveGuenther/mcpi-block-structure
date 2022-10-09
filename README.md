@@ -8,7 +8,7 @@ To include this package in your codebase, clone it to the folder (or as a submod
 ```python
   from mcpi.minecraft import Minecraft
   from mcpi import vec3
-  from mcpi_block_structure.BlockStructure import BlockStructure
+  from mcpi_block_structure.blockstructure import BlockStructure
   
   mc = Minecraft.create('xxx.xxx.xxx.xxx',yyyy)  # where x is the ip for your MineCraft server running Raspberry Juice plugin and mcpi
   
